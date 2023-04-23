@@ -1,8 +1,14 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import image1 from '/imgs/giga1.jpg'
+import { ChadChangeimg } from './src/myComponent/gigaChange'
+
+
 import { setupCounter } from './counter.js'
+
+
+
+customElements.define('chadimg-changer',ChadChangeimg)
 
 document.querySelector('#app').innerHTML = `
   <div>
